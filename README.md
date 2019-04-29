@@ -1,5 +1,5 @@
 # zipgit
-Zip the files and directory structure within a range of git commits
+Zip files and keep directory structure within a range of git commits
 
 ## Instructions:
 - Install file to `/usr/local/bin`
