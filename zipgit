@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# $1:  commit begin
+# $2:  commit end
+# $3:  zip location
+
+if [[ $# -eq 0 ]] ; then
+    echo ''
+    echo '================='
+    echo 'Welcome to ZipGit'
+    echo '================='
+    echo ''
+    echo 'Instructions:'
+    echo '-------------'
+    echo '• First argument is required - Enter the name of the first commit (eg. 0793006ca94d0415a6345fd0f6efc22ca693d5ab)'
+    echo '• Second argument is required - Enter the name of the second commit (eg. 0afad0cebff0907bd1060d25bf0436c31375c8b5)'
+    echo '• Third argument is required - Enter the location and name of the zip file: ~/Desktop/myzip.zip'
+    echo ''
+    exit 0
+fi
+
+IFS=$'\n'
+files=($(git diff --name-only $1 $2))
+
+git archive -o $3 $2 "${files[@]}"
