@@ -34,6 +34,7 @@ So all files that have changed between `fdec9c...` and `7061d7...` will be saved
 
 **Result—once unzipped—should be something like:**
 
+![Screenshot 2019-04-29 at 10 57 28](https://user-images.githubusercontent.com/811806/56889263-d0e29300-6a6d-11e9-82c5-00262cf4b100.png)
 
 
 
